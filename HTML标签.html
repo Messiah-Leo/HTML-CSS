@@ -5,25 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML标签</title>
+    <style>
+        /* 元素选择器 */
+        h1{
+            color: red;
+            font-size: 20px;
+        }
+        /* 类选择器 */
+        .test{
+            color: blanchedalmond;
+            font-size: medium;
+        }
+        /* id选择器 */
+        #any{
+            color: blue;
+        }
+        /* 一般使用class选择器，不使用id选择器 */
+        /* 通配符选择器 * ，指定所有元素，不常用 */
+    </style>
 </head>
 <body>
     <!-- 标题标签 -->
     <h1>Hello HTML</h1>
     <h2>Hello HTML</h2>
-    <h3>Hello HTML</h3>
+    <h3 class="test">Hello HTML</h3>
     <h4>Hello HTML</h4>
-    <h5>Hello HTML</h5>
+    <h5 class="test">Hello HTML</h5>
     <h6>Hello HTML</h6>
 
     <!-- 段落标签 -->
     <h1>我的第一篇文章</h1>
     <p>这是我的第一个网页这是我的第一个网页这是我的第一个网页</p>
-    <p>这是我的第一个网页这是我的第一个网页这是我的第一个网页</p>
+    <p class="test">这是我的第一个网页这是我的第一个网页这是我的第一个网页</p>
     <p>这是我的第一个网页这是我的第一个网页这是我的第一个网页</p>
     
     <!-- 无序标签：ul，列表元素：li -->
     <ul>
-        <li>香蕉</li>
+        <li id="any">香蕉</li>
         <li>苹果</li>
         <li>鸭梨</li>
     </ul>
@@ -32,7 +50,7 @@
     <ol>
         <li>香蕉</li>
         <li>苹果</li>
-        <li>鸭梨</li>
+        <li class="test">鸭梨</li>
     </ol>
    
     <!-- 超链接标签（锚点标签） -->
