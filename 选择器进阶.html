@@ -5,13 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>选择器进阶</title>
+    <style>
+        /* 层级选择器 */
+        /* .box1 p{
+            font-size: 20px;
+            color: aqua;
+        } */
+
+        /* 组合选择器 */
+        h1,p{
+            background-color: blanchedalmond;
+        }
+        /* 伪类选择器（增加行为） */
+        .login{
+            width: 50px;
+            text-align:center;
+        }
+        .login:hover{
+            background-color: aqua;
+        }
+        /* 伪元素选择器（增加元素） */
+        p::before{
+            content: "！";
+        }
+    </style>
 </head>
 <body>
+    <div class="box1">
     <h1>更多选择器</h1>
     <p>层级选择器：selector1 selector2</p>
     <p>组合选择器：selector1，selector2</p>
     <p>伪类选择器（增加行为）：selector:hover</p>
     <p>伪元素选择器（增加元素）：selector::before，selector::after</p>
+    </div>
+    
+    <div class="box2">
     <p>除此之外还有很多选择器</p>
+    </div>
+
+    <div class="login">
+        <a href="/login">登录</a>
+    </div>
+
+    <h1>选择器权重</h1>
+    <p>相同选择器：后面的会覆盖前面的</p>
+    <p>不同选择器：ID(100)>CLASS(10)>element(1)</p>
+    <p>层级选择器：按权重累加计算</p>
+    <p>!important使当前选项权重值最高</p>
 </body>
 </html>
